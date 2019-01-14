@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 
 
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 //********************  Modulos  *************************//
@@ -18,6 +19,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 //********************  Pipes  *************************//
@@ -32,7 +34,8 @@ import { KeysPipe } from '../pipes/keys.pipe';
         PagesComponent,
         IncrementadorComponent,
         GraficoDonaComponent,
-        KeysPipe
+        KeysPipe,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
@@ -45,7 +48,8 @@ import { KeysPipe } from '../pipes/keys.pipe';
         SharedModule,
         PAGES_ROUTING,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        RouterModule
     ]
 })
 

@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 
 //********************  Modulos  *************************//
 import { PagesModule } from './pages/pages.module';
+import { ServicesModule } from './services/services.module';
+import { FormsModule } from '@angular/forms';
 
 
 //********************  Componentes  *************************//
@@ -25,9 +27,12 @@ import { ROUTING } from './app.routes';
   imports: [
     BrowserModule,
     ROUTING,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    ServicesModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
