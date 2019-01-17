@@ -24,6 +24,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 
 //********************  Pipes  *************************//
 import { KeysPipe } from '../pipes/keys.pipe';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { KeysPipe } from '../pipes/keys.pipe';
         IncrementadorComponent,
         GraficoDonaComponent,
         KeysPipe,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [
         DashboardComponent,
