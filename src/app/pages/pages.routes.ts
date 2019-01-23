@@ -10,10 +10,14 @@ import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
 
+import { LoginGuard } from '../services';
+
+
 const ROUTES: Routes = [
     { 
         path: '', 
         component: PagesComponent,
+        canActivate: [ LoginGuard ],
         children: [
             { path: 'dashboard', component: DashboardComponent, data: { breadcrumb: 'Dashboard' } },
             { path: 'progress', component: ProgressComponent, data: { breadcrumb: 'Progress' } },

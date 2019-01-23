@@ -5,7 +5,8 @@ import { NgModule } from '@angular/core';
 //********************  Modulos  *************************//
 import { PagesModule } from './pages/pages.module';
 import { ServicesModule } from './services/services.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 //********************  Componentes  *************************//
@@ -28,7 +29,9 @@ import { ROUTING } from './app.routes';
     BrowserModule,
     ROUTING,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     ServicesModule
